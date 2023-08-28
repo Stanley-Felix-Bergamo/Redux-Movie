@@ -3,7 +3,7 @@ const MovieDetail = () => {
     <div>
       <h1>MovieDetail</h1>
     </div>
-  )
-}
+  );
+};
 
-export default MovieDetail
+export default MovieDetail;
