@@ -1,5 +1,5 @@
 //Cores
-@import "../src/commom/colors.scss";
+@import '../src/commom/colors.scss';
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -16,5 +16,6 @@ body {
 
 .container {
   width: 100%;
-  margin: 0 40px;
+  margin: 0 auto;
+  max-width: 1024px;
 }

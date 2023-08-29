@@ -1,5 +1,5 @@
 //Cores
-@import "../../commom/colors.scss";
+@import '../../commom/colors.scss';
 
 .header {
   background-color: $secondary-color;
@@ -7,7 +7,7 @@
   padding: 0px 40px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .logo {
