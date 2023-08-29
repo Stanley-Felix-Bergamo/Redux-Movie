@@ -1,0 +1,20 @@
+//Cores
+@import "../src/commom/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: $primary-color;
+}
+
+.container {
+  width: 100%;
+  margin: 0 40px;
+}

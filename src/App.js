@@ -13,7 +13,9 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Rotas />
+        <div className="container">
+          <Rotas />
+        </div>
         <Footer />
       </BrowserRouter>
     </div>

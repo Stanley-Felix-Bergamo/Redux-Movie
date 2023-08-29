@@ -1,7 +1,21 @@
+//React
+import { Link } from 'react-router-dom';
+
+//images
+import user from '../../images/user.png';
+
+//styles
+import './styles.scss';
+
 const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
+    <div className="header">
+      <Link to="/">
+        <div className="logo">Redux Movie</div>
+      </Link>
+      <div className="user-image">
+        <img src={user} alt="user" />
+      </div>
     </div>
   );
 };
