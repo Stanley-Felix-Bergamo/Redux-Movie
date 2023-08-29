@@ -3,7 +3,7 @@
 <div align="center" >
     <img width="725rem" src="" alt="imagem">
 </div>
-
+> Para ver o projeto rodando você pode acessar este [Link](https://redux-movie-red.vercel.app/).
 <h2>👨‍🏫 Créditos</h2>
 <p>Este projeto foi realizado nas aulas do  <a target="_blank" href="https://www.youtube.com/watch?v=EnIRyNT2PMI&ab_channel=DipeshMalvia">Dipesh Malvia</a>.</p>
 
