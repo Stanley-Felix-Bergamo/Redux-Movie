@@ -6,11 +6,14 @@ import {
   fetchAsyncShows
 } from '../../features/movies/movieSlice';
 
+const movieText = 'Back to the future';
+const showText = 'Star';
+
 const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(movieText));
+    dispatch(fetchAsyncShows(showText));
   }, [dispatch]);
 
   return (
