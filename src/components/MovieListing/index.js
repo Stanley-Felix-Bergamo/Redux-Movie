@@ -1,10 +1,12 @@
 import { useSelector } from 'react-redux/es/hooks/useSelector';
-import { getAllMovies } from '../../features/movies/movieSlice';
+import { getAllMovies, getAllShows } from '../../features/movies/movieSlice';
 import MovieCard from '../MovieCard/index';
 import './styles.scss';
 
 const MovieListing = () => {
   const movies = useSelector(getAllMovies);
+  const shows = useSelector(getAllShows);
+
   return (
     <div className="movie-wrapper">
       <div className="movie-list">
@@ -17,6 +19,20 @@ const MovieListing = () => {
           ) : (
             <div className="movies-error">
               <h3>{movies.Error}</h3>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="show-list">
+        <h2>Shows</h2>
+        <div className="movies-container">
+          {shows.Search ? (
+            shows.Search.map((show) => (
+              <MovieCard key={show.imdbID} data={show} />
+            ))
+          ) : (
+            <div className="movies-error">
+              <h3>{shows.Error}</h3>
             </div>
           )}
         </div>
